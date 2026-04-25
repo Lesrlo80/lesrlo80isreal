@@ -1,7 +1,94 @@
 <!DOCTYPE html>
 <html>
-<body style="background:black; color:red; text-align:center;">
-  <h1>TOILET PREMIUM</h1>
-  <p>(Los productos presentados en esta página no tienen seguridad verificada</p>
+<head>
+  <title>Los productos toilet no son del todo seguros...</title>
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-family: Arial;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 40px;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+      color: gray;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .grid img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>dop dop</h1>
+  <h2>yes yes?</h2>
+
+  <div class="grid">
+
+    <!-- 1 -->
+    <img src="normal.png"
+         onmouseover="this.src='hover.png'"
+         onmouseout="this.src='normal.png'">
+
+    <!-- 2 -->
+    <img src="normal.png"
+         onmouseover="this.src='hover.png'"
+         onmouseout="this.src='normal.png'">
+
+    <!-- 3 (EL CORRECTO 👀) -->
+    <img src="normal.png"
+         onmouseover="this.src='hover.png'"
+         onmouseout="this.src='normal.png'"
+         onclick="window.location='secreto_final.html'">
+
+    <!-- 4 -->
+    <img src="normal.png"
+         onmouseover="this.src='hover.png'"
+         onmouseout="this.src='normal.png'">
+
+    <!-- 5 -->
+    <img src="normal.png"
+         onmouseover="this.src='hover.png'"
+         onmouseout="this.src='normal.png'">
+
+    <!-- 6 -->
+    <img src="normal.png"
+         onmouseover="this.src='hover.png'"
+         onmouseout="this.src='normal.png'">
+
+    <!-- 7 -->
+    <img src="normal.png"
+         onmouseover="this.src='hover.png'"
+         onmouseout="this.src='normal.png'">
+
+    <!-- 8 -->
+    <img src="normal.png"
+         onmouseover="this.src='hover.png'"
+         onmouseout="this.src='normal.png'">
+
+  </div>
+
 </body>
 </html>
