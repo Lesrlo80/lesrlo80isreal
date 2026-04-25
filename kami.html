@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kami</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to top, #000000, #001a33, #003366, #66ccff);
+      height: 4000px;
+      position: relative;
+      overflow-x: hidden;
+      font-family: Arial;
+      color: white;
+    }
+
+    /* Bastón */
+    .baston {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      width: 10px;
+      height: 100%;
+      background: linear-gradient(to bottom, #663300, #cc9966);
+      z-index: 2;
+    }
+
+    /* Atalaya */
+    .atalaya {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      z-index: 3;
+    }
+
+    .atalaya img {
+      width: 220px;
+      margin-bottom: 10px;
+    }
+
+    .mensaje {
+      font-size: 20px;
+      background: rgba(0,0,0,0.6);
+      padding: 10px;
+    }
+
+    /* Texto abajo */
+    .inicio {
+      position: absolute;
+      bottom: 50px;
+      width: 100%;
+      text-align: center;
+      font-size: 20px;
+      color: gray;
+    }
+
+    /* Nubes */
+    .nube {
+      position: absolute;
+      width: 200px;
+      opacity: 0.8;
+      animation: flotar linear infinite;
+    }
+
+    @keyframes flotar {
+      from {
+        transform: translateX(-200px);
+      }
+      to {
+        transform: translateX(120vw);
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Bastón -->
+  <div class="baston"></div>
+
+  <!-- Atalaya -->
+  <div class="atalaya">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdLIBEvB_Csctn0eZImCS22GHhwQn_h7ErGw&s">
+    <div class="mensaje">Has llegado demasiado lejos.</div>
+  </div>
+
+  <!-- Texto inicial -->
+  <div class="inicio">
+    sigue subiendo
+  </div>
+
+  <!-- Nubes -->
+  <img src="https://static.vecteezy.com/system/resources/previews/023/625/891/non_2x/cloud-in-golden-color-png.png" class="nube" style="top: 800px; animation-duration: 40s;">
+  <img src="https://static.vecteezy.com/system/resources/previews/023/625/891/non_2x/cloud-in-golden-color-png.png" class="nube" style="top: 1400px; animation-duration: 60s;">
+  <img src="https://static.vecteezy.com/system/resources/previews/023/625/891/non_2x/cloud-in-golden-color-png.png" class="nube" style="top: 2200px; animation-duration: 50s;">
+  <img src="https://static.vecteezy.com/system/resources/previews/023/625/891/non_2x/cloud-in-golden-color-png.png" class="nube" style="top: 3000px; animation-duration: 70s;">
+
+  <!-- Música -->
+  <audio id="musica" loop>
+    <source src="kami.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    // Activar música al primer click
+    document.body.addEventListener("click", function() {
+      document.getElementById("musica").play();
+    }, { once: true });
+  </script>
+
+</body>
+</html>
