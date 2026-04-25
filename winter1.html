@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>...</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      overflow: hidden;
+    }
+
+    img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover; /* llena toda la pantalla */
+    }
+  </style>
+</head>
+
+<body>
+
+  <img src="imagenwinter.png">
+
+  <audio id="musica" loop>
+    <source src="Lost Girl.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    // La música empieza cuando el usuario hace click en la página
+    document.body.addEventListener("click", function() {
+      document.getElementById("musica").play();
+    });
+  </script>
+
+</body>
+</html>
